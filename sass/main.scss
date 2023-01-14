@@ -2,5 +2,6 @@
 @use './components' as *;
 
 body {
-  margin: 0;
+  font-family: var(--ff-primary);
+  text-align: center;
 }

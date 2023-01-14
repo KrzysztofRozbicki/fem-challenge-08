@@ -1,0 +1,41 @@
+:root {
+  --ff-primary: 'Red Hat Display', sans-serif;
+
+  --fs-450: 1rem; //16px constant value for all media queries
+  --fs-500: 1rem; //16px
+  --fs-600: 1.125rem; //18px
+  --fs-700: 2rem; //32px
+  --fs-900: 2.5rem; //40px
+
+  --text-header-500: #28283d;
+
+  --button-primary-500: #4d96a9;
+  --button-primary-600: #855fb1;
+
+  --button-active-500: #8fe3f9;
+  --button-active-500: #d9b8ff;
+
+  --text-primary-100: #fafafa;
+  --text-primary-500: #87879d;
+
+  --text-accent-500: var(--button-primary-500);
+
+  --bg-primary: var(--text-primary-100);
+}
+
+$tablet-size: 48em;
+$desktop-size: 64em;
+
+@media (min-width: $tablet-size) {
+  :root {
+    --fs-700: 2.5rem; //40px
+    --fs-900: 3rem; //48px
+  }
+}
+
+@media (min-width: $desktop-size) {
+  :root {
+    --fs-500: 1.125rem; //18px
+    --fs-900: 4rem; //64px
+  }
+}

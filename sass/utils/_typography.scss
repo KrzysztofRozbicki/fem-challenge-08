@@ -1,0 +1,8 @@
+@use '../utils/vars' as *;
+
+@mixin text($size, $color, $weight, $line) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  line-height: $line;
+}

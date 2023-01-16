@@ -17,23 +17,91 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    Group Chat for Everyone Meet makes it easy to connect with others face-to-face virtually and
-    collaborate across any device. Download v1.3 What is it? 01 Built for modern use Smarter
-    meetings, all in one place Send messages, share files, show your screen, and record your
-    meetings — all in one workspace. Control who can join with invite-only team access, data
-    encryption, and data export. 02 Experience more together Stay connected with reliable HD
-    meetings and unlimited one-on-one and group video sessions. Download v1.3
-    <footer class="attribution">
+    <header class="header wrapper">
+      <a href="index.html"><img src="./assets/logo.svg" alt="Website logo" /></a>
+      <img
+        class="header__photo"
+        src="./assets/tablet/image-hero.png"
+        alt="Many separate round portraits of people"
+      />
+    </header>
+
+    <main>
+      <section class="wrapper">
+        <h1 class="header-500">Group Chat for Everyone</h1>
+
+        <p class="text-500">
+          Meet makes it easy to connect with others face-to-face virtually and collaborate across
+          any device.
+        </p>
+
+        <button class="button button--500 text-button-400">
+          Download <span class="text-button-400__accent-500">v1.3</span>
+        </button>
+
+        <button class="button button--600 text-button-400">What is it?</button>
+      </section>
+      <div class="separator">01</div>
+      <div class="wrapper">
+        <img
+          src="./assets/desktop/image-woman-in-videocall.jpg"
+          alt="smiling woman during video call"
+          class="social-photo"
+        />
+        <img
+          src="./assets/desktop/image-women-videochatting.jpg"
+          alt="older women video chatting"
+          class="social-photo"
+        />
+        <img
+          src="./assets/desktop/image-men-in-meeting.jpg"
+          alt="man having an online video meeting"
+          class="social-photo"
+        />
+        <img
+          src="./assets/desktop/image-man-texting.jpg"
+          alt="man texting on the phone"
+          class="social-photo"
+        />
+      </div>
+      <section class="wrapper">
+        <h3 class="text-accent-400">Built for modern use</h3>
+
+        <h2 class="header-400">Smarter meetings, all in one place</h2>
+
+        <p class="text-500">
+          Send messages, share files, show your screen, and record your meetings — all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data
+          export.
+        </p>
+      </section>
+      <div class="separator">02</div>
+    </main>
+
+    <footer class="footer wrapper">
+      <h2 class="header-400 header-400--contrast">Experience more together</h2>
+
+      <p class="text-600">
+        Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+      </p>
+      <button class="button button--550 text-button-400">
+        Download <span class="text-button-400__accent-600">v1.3</span>
+      </button>
+    </footer>
+
+    <div class="text-attribution">
       Challenge by
       <a
-        class="attribution__link"
+        class="text-attribution__link"
         href="https://www.frontendmentor.io?ref=challenge"
         target="_blank"
       >
         Frontend Mentor
       </a>
       Coded by
-      <a class="attribution__link" href="https://pogbit.com/" target="_blank"> @K. Rozbicki </a>
-    </footer>
+      <a class="text-attribution__link" href="https://pogbit.com/" target="_blank">
+        @K. Rozbicki
+      </a>
+    </div>
   </body>
 </html>

@@ -1,16 +1,19 @@
 :root {
   --ff-primary: 'Red Hat Display', sans-serif;
 
-  --fs-450: 1rem; //16px constant value for all media queries
+  --fs-300: 0.5rem; //8px
+  --fs-400: 1rem; //16px constant value for all media queries
   --fs-500: 1rem; //16px
-  --fs-600: 1.125rem; //18px
+  --fs-600: 1.125rem; //18px constant value
   --fs-700: 2rem; //32px
   --fs-900: 2.5rem; //40px
 
   --text-header-500: #28283d;
 
   --button-primary-500: #4d96a9;
+  --button-primary-500-light: #71c0d4;
   --button-primary-600: #855fb1;
+  --button-primary-600-light: #b18bdd;
 
   --button-active-500: #8fe3f9;
   --button-active-500: #d9b8ff;
@@ -18,7 +21,10 @@
   --text-primary-100: #fafafa;
   --text-primary-500: #87879d;
 
+  --text-accent-500-light: #8fe3f9;
+  --text-accent-600-light: #d9b8ff;
   --text-accent-500: var(--button-primary-500);
+  --text-accent-600: var(--button-primary-600);
 
   --bg-primary: var(--text-primary-100);
 }
@@ -35,6 +41,7 @@ $desktop-size: 64em;
 
 @media (min-width: $desktop-size) {
   :root {
+    --fs-300: 0.75rem; //12px
     --fs-500: 1.125rem; //18px
     --fs-900: 4rem; //64px
   }

@@ -1,0 +1,12 @@
+@use '../utils' as *;
+.hero {
+  padding-bottom: 4rem;
+  max-width: 28.5rem;
+  &__header {
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,36 @@
+@use '../utils' as *;
+.separator {
+  position: relative;
+  display: block;
+
+  height: calc(5.75rem + 3.5rem);
+  &__circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto;
+    padding-block: 0.9375rem;
+    margin-top: 5.25rem;
+    border: 1px solid var(--border-primary);
+    background-color: var(--bg-primary);
+    z-index: 2;
+    &--02 {
+      top: 25%;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: -5.3175rem;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 5.25rem;
+      width: 1px;
+      background-color: var(--border-primary);
+    }
+  }
+
+  @include text(var(--fs-400), var(--text-primary-500), 900, 1.625);
+}

@@ -7,17 +7,7 @@
   line-height: $line;
 }
 
-.text-attribution {
-  @include text(var(--fs-300), var(--text-primary-500), 900, 1);
-  &__link {
-    color: var(--text-accent-500);
-    transition: 0.3s ease-in-out;
-    &:hover,
-    &:focus {
-      color: var(--text-accent-600);
-    }
-  }
-}
+
 .header-400 {
   @include text(var(--fs-700), var(--text-header-500), 900, 1.125);
   &--contrast {

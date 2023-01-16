@@ -20,6 +20,8 @@
   --text-accent-500: var(--button-primary-500);
   --text-accent-600: var(--button-primary-600);
   --bg-primary: var(--text-primary-100);
+  --bg-accent: var(--button-primary-500);
+  --border-primary: #87879d40;
 }
 
 @media (min-width: 48em) {
@@ -35,21 +37,6 @@
     --fs-900: 4rem;
   }
 }
-.text-attribution {
-  font-size: var(--fs-300);
-  color: var(--text-primary-500);
-  font-weight: 900;
-  line-height: 1;
-}
-.text-attribution__link {
-  color: var(--text-accent-500);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-}
-.text-attribution__link:hover, .text-attribution__link:focus {
-  color: var(--text-accent-600);
-}
-
 .header-400 {
   font-size: var(--fs-700);
   color: var(--text-header-500);
@@ -112,6 +99,8 @@
   border: none;
   padding-block: 1rem;
   border-radius: 29px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .button:hover, .button:focus, .button:active {
   cursor: pointer;
@@ -138,10 +127,133 @@
   background-color: var(--button-primary-600-light);
 }
 
+.gallery {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-block: 4rem;
+}
+.gallery__photo {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.hero {
+  padding-bottom: 4rem;
+  max-width: 28.5rem;
+}
+.hero__header {
+  margin-bottom: 1.5rem;
+}
+.hero__text {
+  margin-bottom: 2rem;
+}
+
+.article {
+  padding-bottom: 2.25rem;
+}
+.article__accent {
+  margin-bottom: 1.5rem;
+}
+.article__header {
+  margin-bottom: 2rem;
+}
+
+.separator {
+  position: relative;
+  display: block;
+  height: 9.25rem;
+  font-size: var(--fs-400);
+  color: var(--text-primary-500);
+  font-weight: 900;
+  line-height: 1.625;
+}
+.separator__circle {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 auto;
+  padding-block: 0.9375rem;
+  margin-top: 5.25rem;
+  border: 1px solid var(--border-primary);
+  background-color: var(--bg-primary);
+  z-index: 2;
+}
+.separator__circle--02 {
+  top: 25%;
+}
+.separator__circle:before {
+  content: "";
+  position: absolute;
+  top: -5.3175rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 5.25rem;
+  width: 1px;
+  background-color: var(--border-primary);
+}
+
+.header {
+  padding-block: 3rem;
+  overflow-x: hidden;
+  width: 100%;
+}
+.header__photo {
+  position: relative;
+  left: -5.5%;
+  min-width: 111%;
+}
+
+.footer {
+  background-color: var(--bg-accent);
+  position: relative;
+  padding-top: 5.75rem;
+  padding-bottom: 4.5rem;
+}
+.footer__header {
+  margin-bottom: 1.5rem;
+}
+.footer__text {
+  margin-bottom: 2rem;
+}
+.footer__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  pointer-events: none;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0.25rem;
+  font-size: var(--fs-300);
+  color: var(--text-primary-100);
+  font-weight: 500;
+  line-height: 1;
+}
+.attribution__link {
+  color: var(--text-accent-600);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+}
+.attribution__link:hover, .attribution__link:focus {
+  color: var(--text-accent-600-light);
+}
+
 body {
   font-family: var(--ff-primary);
   text-align: center;
-  padding: 1rem;
   background-color: var(--bg-primary);
   min-height: 100vh;
   display: -webkit-box;
@@ -158,4 +270,32 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: hidden;
+  position: relative;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 3.375rem;
+}
+
+.wrapper {
+  padding-inline: 1.5rem;
+  margin: 0 auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.flex--buttons {
+  gap: 1rem;
 }/*# sourceMappingURL=main.min.css.map */

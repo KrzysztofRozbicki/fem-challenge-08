@@ -1,0 +1,11 @@
+@use '../utils' as *;
+
+.article {
+  padding-bottom: 2.25rem;
+  &__accent {
+    margin-bottom: 1.5rem;
+  }
+  &__header {
+    margin-bottom: 2rem;
+  }
+}

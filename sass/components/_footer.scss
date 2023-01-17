@@ -12,9 +12,11 @@
   align-items: center;
   &__header {
     margin-bottom: 1.5rem;
+    z-index: 2;
   }
   &__text {
     margin-bottom: 2rem;
+    z-index: 2;
   }
   &__photo {
     position: absolute;

@@ -101,6 +101,7 @@
   border-radius: 29px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  z-index: 2;
 }
 .button:hover, .button:focus, .button:active {
   cursor: pointer;
@@ -247,6 +248,10 @@
     margin: 0 auto;
     padding-bottom: 2.75rem;
   }
+  .article__header {
+    padding-inline: 3rem;
+    margin-inline: auto;
+  }
 }
 .separator {
   position: relative;
@@ -327,9 +332,11 @@
 }
 .footer__header {
   margin-bottom: 1.5rem;
+  z-index: 2;
 }
 .footer__text {
   margin-bottom: 2rem;
+  z-index: 2;
 }
 .footer__photo {
   position: absolute;

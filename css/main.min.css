@@ -199,7 +199,7 @@
     background-image: url("../assets/desktop/image-hero-left.png");
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: -3rem;
     left: -2rem;
     height: 100%;
     width: min(27.5vw, 400px);
@@ -300,7 +300,7 @@
 @media (min-width: 64em) {
   .header {
     padding-top: 5rem;
-    padding-bottom: 3.75rem;
+    padding-bottom: 6.75rem;
   }
   .header__photo {
     display: none;

@@ -5,6 +5,11 @@
   position: relative;
   padding-top: 5.75rem;
   padding-bottom: 4.5rem;
+  padding-inline: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__header {
     margin-bottom: 1.5rem;
   }
@@ -20,5 +25,34 @@
     object-fit: cover;
     width: 100%;
     pointer-events: none;
+  }
+}
+
+@media (min-width: $tablet-size) {
+  .footer {
+    padding-inline: 6.125rem;
+    padding-bottom: 4.125rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .footer {
+    padding-top: 6.5rem;
+    padding-bottom: 7.25rem;
+    padding-inline: 10.375rem;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+   justify-content: center;
+  }
+  .footer__header {
+    margin: 0;
+    margin-right: min(9vw, 7.875rem);
+  }
+
+  .footer__text {
+    margin: 0;
+    margin-right: min(8vw, 5.75rem);
+    max-width: 21.875rem;
   }
 }

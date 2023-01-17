@@ -10,3 +10,13 @@
     min-width: 111%;
   }
 }
+
+@media (min-width: $desktop-size) {
+  .header {
+    padding-top: 5rem;
+    padding-bottom: 3.75rem;
+  }
+  .header__photo {
+    display: none;
+  }
+}

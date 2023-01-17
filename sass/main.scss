@@ -22,8 +22,20 @@ body {
 .wrapper {
   padding-inline: 1.5rem;
   margin: 0 auto;
+  width: 100vw;
 }
 
+@media (min-width: $tablet-size) {
+  .wrapper {
+    padding-inline: 2.5rem;
+  }
+}
+
+@media (min-width: $desktop-size) {
+  .wrapper {
+    padding-inline: 10.375rem;
+  }
+}
 
 .flex {
   display: flex;
@@ -34,6 +46,3 @@ body {
     gap: 1rem;
   }
 }
-
-
-

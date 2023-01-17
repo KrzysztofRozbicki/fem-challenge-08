@@ -27,7 +27,7 @@
     </header>
 
     <main>
-      <section class="wrapper hero">
+      <section class="hero background-images">
         <h1 class="hero__header header-500">
           Group Chat
           <br />
@@ -71,7 +71,7 @@
           class="gallery__photo"
         />
       </div>
-      <section class="article wrapper">
+      <section class="article">
         <h3 class="article__accent text-accent-400 mb_1-5">Built for modern use</h3>
         <h2 class="article__header header-400 mb_2">Smarter meetings, all in one place</h2>
 
@@ -86,15 +86,23 @@
       </div>
     </main>
 
-    <footer class="footer wrapper">
+    <footer class="footer">
       <picture>
+        <source
+          media="(min-width: 768px) and (max-width: 1024px)"
+          srcset="assets/tablet/image-footer.jpg"
+        />
+        <source media="(min-width: 1024px)" srcset="assets/desktop/image-footer.jpg" />
         <img
           class="footer__photo"
-          src="./assets/mobile/image-footer.jpg"
+          src="assets/mobile/image-footer.jpg"
           alt="Background with young woman working with laptop"
         />
       </picture>
-      <h2 class="footer__header header-400 header-400--contrast">Experience more together</h2>
+      <h2 class="footer__header header-400 header-400--contrast">
+        Experience more <br />
+        together
+      </h2>
 
       <p class="footer__text text-600">
         Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
@@ -114,9 +122,7 @@
         Frontend Mentor
       </a>
       Coded by
-      <a class="attribution__link" href="https://pogbit.com/" target="_blank">
-        @K. Rozbicki
-      </a>
+      <a class="attribution__link" href="https://pogbit.com/" target="_blank"> @K. Rozbicki </a>
     </div>
   </body>
 </html>

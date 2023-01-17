@@ -3,7 +3,7 @@
   position: relative;
   display: block;
 
-  height: calc(5.75rem + 3.5rem);
+  height: 8.75rem;
   &__circle {
     position: absolute;
     left: 50%;
@@ -18,7 +18,7 @@
     background-color: var(--bg-primary);
     z-index: 2;
     &--02 {
-      top: 25%;
+      top: 1.75rem;
     }
     &:before {
       content: '';
@@ -33,4 +33,9 @@
   }
 
   @include text(var(--fs-400), var(--text-primary-500), 900, 1.625);
+}
+
+@media (min-width: $desktop-size) {
+  .separator {
+  }
 }
